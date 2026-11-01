@@ -1,0 +1,365 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+
+    <!-- ========== BASIC META INFORMATION ========== -->
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta name="theme-color" content="#111827" />
+
+    <!-- ========== WEBSITE TITLE ========== -->
+    <title>Altron Music — Feel Every Beat</title>
+
+    <!-- ========== GOOGLE FONTS ========== -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;500;600;700&family=Manrope:wght@400;500;600;700;800&display=swap" rel="stylesheet">
+
+    <!-- ========== CSS FILE LINK ========== -->
+    <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+
+    <!-- ========== MAIN APP CONTAINER ========== -->
+    <div class="app-shell">
+
+        <!-- ========== SIDEBAR SECTION ========== -->
+        <aside class="sidebar">
+
+            <!-- ========== WEBSITE LOGO / BRAND ========== -->
+            <a class="brand" href="#">
+                <span class="brand-mark">a</span>
+                <span>altron<span class="brand-light"> music</span></span>
+            </a>
+
+            <!-- ========== SIDEBAR MENU HEADING ========== -->
+            <p class="nav-label">MENU</p>
+
+            <!-- ========== MAIN NAVIGATION LINKS ========== -->
+            <nav class="main-nav">
+                <a class="nav-item active" href="#home">
+                    <span>⌂</span> Home
+                </a>
+                <a class="nav-item" href="#discover">
+                    <span>◉</span> Discover
+                </a>
+                <a class="nav-item" href="#library">
+                    <span>▤</span> Your library
+                </a>
+            </nav>
+
+            <!-- ========== PLAYLIST HEADING AND ADD BUTTON ========== -->
+            <p class="nav-label playlist-label">
+                YOUR PLAYLISTS
+                <button id="addPlaylist" aria-label="Add playlist">＋</button>
+            </p>
+
+            <!-- ========== PLAYLIST LINKS ========== -->
+            <div class="playlist-links">
+                <a href="#library">♡ &nbsp; Liked Songs</a>
+                <a href="#library">◷ &nbsp; Recently Played</a>
+                <a href="#library">☼ &nbsp; Chill Vibes</a>
+                <a href="#library">♫ &nbsp; Focus Flow</a>
+            </div>
+
+            <!-- ========== SIDEBAR BOTTOM SECTION ========== -->
+            <div class="sidebar-bottom">
+
+                <!-- ========== UPGRADE / PROMOTION CARD ========== -->
+                <div class="upgrade-card">
+                    <div class="upgrade-icon">✦</div>
+                    <strong>Your sound, your world.</strong>
+                    <p>Discover something new every day.</p>
+                    <a href="#discover">
+                        Explore music <span>↗</span>
+                    </a>
+                </div>
+
+                <!-- ========== USER PROFILE SECTION ========== -->
+                <div class="profile">
+                    <div class="avatar">A</div>
+                    <div>
+                        <strong>Music Lover</strong>
+                        <small>Free account</small>
+                    </div>
+                    <span class="dots">•••</span>
+                </div>
+            </div>
+        </aside>
+        
+       <!-- ========== MAIN CONTENT SECTION ========== -->
+        <main class="main-content" id="home">
+
+            <!-- ========== TOP NAVIGATION BAR ========== -->
+            <header class="topbar">
+
+                <!-- ========== BACKWARD / FORWARD BUTTONS ========== -->
+                <div class="history-buttons">
+                    <button aria-label="Go back">‹</button>
+                    <button aria-label="Go forward">›</button>
+                </div>
+
+                <!-- ========== SEARCH BAR ========== -->
+                <label class="search-box">
+                    <span>⌕</span>
+                    <input
+                        id="searchInput"
+                        type="search"
+                        placeholder="Search songs, artists, albums..."
+                    />
+                </label>
+
+                <!-- ========== PREMIUM UPGRADE BUTTON ========== -->
+                <button class="upgrade-button" id="premiumBtn">
+                    ✦ Upgrade
+                </button>
+           </header>
+
+            <!-- ========== HERO / WELCOME SECTION ========== -->
+            <section class="welcome">
+
+              <!-- ========== HERO TEXT CONTENT ========== -->
+                <div>
+                    <p class="eyebrow">YOUR DAILY SOUNDTRACK</p>
+                    <h1>
+                        Good music.<br>
+                        <span>Good mood.</span>
+                    </h1>
+
+                    <p class="welcome-copy">
+                        Find your rhythm, discover new favourites,
+                        and let the music take you somewhere.
+                    </p>
+
+                    <!-- ========== HERO CALL TO ACTION BUTTON ========== -->
+                    <a class="primary-button" href="#discover">
+                        Explore music <span>→</span>
+                    </a>
+                </div>
+
+                <!-- ========== HERO MUSIC ARTWORK ========== -->
+                <div class="hero-art" aria-label="Abstract music artwork">
+
+                    <!-- Decorative Background Orbs -->
+                    <div class="orb orb-one"></div>
+                    <div class="orb orb-two"></div>
+
+                    <!-- ========== ROTATING MUSIC DISC ========== -->
+                    <div class="hero-disc">
+                       <div class="disc-center">
+                            A<span>♪</span>
+                        </div>
+                   </div>
+
+                    <!-- ========== MUSIC SOUND WAVE ANIMATION ========== -->
+                    <div class="sound-wave">
+                        <i></i>
+                        <i></i>
+                        <i></i>
+                        <i></i>
+                        <i></i>
+                        <i></i>
+                        <i></i>
+                        <i></i>
+                        <i></i>
+                        <i></i>
+                        <i></i>
+                    </div>
+
+                    <!-- ========== FLOATING MUSIC NOTES ========== -->
+                    <span class="floating-note note-one">♫</span>
+                    <span class="floating-note note-two">♪</span>
+                </div>
+           </section>
+           
+            <!-- ========== DISCOVER / MOOD SECTION ========== -->
+            <section class="section" id="discover">
+
+                <!-- ========== SECTION HEADING ========== -->
+                <div class="section-heading">
+                    <div>
+                        <p class="eyebrow">MADE FOR YOUR MOMENT</p>
+                        <h2>Made for you</h2>
+                    </div>
+                    <a href="#tracks">
+                        See all <span>→</span>
+                    </a>
+                </div>
+                <!-- ========== MUSIC MOOD CARDS ========== -->
+                <div class="mood-grid">
+
+                    <!-- ========== FEEL GOOD MOOD CARD ========== -->
+                    <button class="mood-card mood-peach" data-filter="all">
+                        <span class="mood-symbol">☀</span>
+                        <strong>Feel good</strong>
+                        <small>Brighten your day</small>
+                    </button>
+
+                    <!-- ========== CHILL MOOD CARD ========== -->
+                    <button class="mood-card mood-blue" data-filter="chill">
+                        <span class="mood-symbol">☾</span>
+                        <strong>Slow & easy</strong>
+                        <small>Take it slow</small>
+                    </button>
+
+                    <!-- ========== FOCUS MOOD CARD ========== -->
+                    <button class="mood-card mood-lilac" data-filter="focus">
+                        <span class="mood-symbol">✧</span>
+                        <strong>Deep focus</strong>
+                        <small>Find your flow</small>
+                    </button>
+                   <!-- ========== ENERGY MOOD CARD ========== -->
+                    <button class="mood-card mood-green" data-filter="energy">
+                        <span class="mood-symbol">↗</span>
+                        <strong>Energy boost</strong>
+                        <small>Turn it up</small>
+                    </button>
+                  </div>
+            </section>
+
+           <!-- ========== POPULAR TRACKS SECTION ========== -->
+            <section class="section" id="tracks">
+
+              <!-- ========== TRACK SECTION HEADING ========== -->
+                <div class="section-heading">
+                    <div>
+                       <p class="eyebrow">A LITTLE BIT OF EVERYTHING</p>
+                       <h2>Popular tracks</h2>
+                    </div>
+
+                   <!-- ========== MUSIC CATEGORY FILTER BUTTONS ========== -->
+                    <div class="track-filters">
+                        <button class="filter-btn active" data-filter="all">
+                            All
+                        </button>
+                        <button class="filter-btn" data-filter="chill">
+                            Chill
+                        </button>
+                        <button class="filter-btn" data-filter="focus">
+                            Focus
+                        </button>
+                        <button class="filter-btn" data-filter="energy">
+                            Energy
+                        </button>
+                    </div>
+                  </div>
+                <!-- ========== DYNAMIC MUSIC TRACK LIST ========== -->
+                <div class="track-list" id="trackList">
+
+                    <!-- Music tracks will be added using JavaScript -->
+
+                    <div class="track-row track-header">
+                        <span>#</span>
+                        <span>Title</span>
+                        <span>Album</span>
+                        <span>Duration</span>
+                        <span></span>
+                    </div>
+                 </div>
+            </section>
+
+            <!-- ========== FAVOURITE SONGS / LIBRARY SECTION ========== -->
+            <section class="section library-section" id="library">
+
+                <!-- ========== FAVOURITES SECTION HEADING ========== -->
+                <div class="section-heading">
+                    <div>
+                        <p class="eyebrow">KEEP THE GOOD VIBES CLOSE</p>
+                        <h2>Your favourites</h2>
+                    </div>
+               </div>
+
+                <!-- ========== DYNAMIC FAVOURITE SONGS ========== -->
+                <div class="favourite-strip" id="favouriteStrip">
+                    <span class="empty-faves">
+                        Tap the ♡ beside a track to save it here.
+                    </span>
+                </div>
+            </section>
+
+            <!-- ========== WEBSITE FOOTER ========== -->
+            <footer>
+               Made with <span>♥</span> and good music
+                · Altron Music © 2026
+            </footer>
+       </main>
+   </div>
+
+    <!-- ========== BOTTOM MUSIC PLAYER SECTION ========== -->
+    <div class="player-bar">
+
+
+        <!-- ========== CURRENTLY PLAYING SONG INFORMATION ========== -->
+        <div class="now-playing">
+
+            <!-- ========== CURRENT SONG COVER IMAGE ========== -->
+            <div class="mini-cover cover-1" id="playerCover">♫</div>
+
+            <!-- ========== CURRENT SONG TITLE AND ARTIST ========== -->
+            <div class="now-text">
+                <strong id="playerTitle">Choose a track</strong>
+                <small id="playerArtist">
+                    Your next favourite is waiting
+                </small>
+            </div>
+
+            <!-- ========== CURRENT SONG FAVOURITE BUTTON ========== -->
+            <button class="like-btn" id="playerLike" aria-label="Like current song">
+                ♡
+            </button>
+        </div>
+
+        <!-- ========== MUSIC PLAYER CONTROLS ========== -->
+        <div class="player-controls">
+
+            <!-- ========== PLAY / PAUSE / NEXT / PREVIOUS CONTROLS ========== -->
+            <div class="control-buttons">
+                <button id="shuffleBtn" title="Shuffle">⤨</button>
+                <button id="prevBtn" title="Previous">Ⅰ◀</button>
+                <button class="play-button" id="playBtn" title="Play">
+                    ▶
+                </button>
+                <button id="nextBtn" title="Next">▶Ⅰ</button>
+                <button id="repeatBtn" title="Repeat">↻</button>
+            </div>
+
+            <!-- ========== SONG PROGRESS BAR AND TIME ========== -->
+            <div class="progress-row">
+                <span id="currentTime">0:00</span>
+                <input
+                    type="range"
+                    id="progress"
+                    min="0"
+                    max="100"
+                    value="0"
+                    aria-label="Track progress">
+                <span id="duration">0:00</span>
+            </div>
+        </div>
+       <!-- ========== MUSIC VOLUME CONTROL ========== -->
+        <div class="volume-control">
+            <span>◖</span>
+            <input
+                type="range"
+                id="volume"
+                min="0"
+                max="1"
+                step="0.01"
+                value="0.7"
+                aria-label="Volume"
+            >
+        </div>
+    </div>
+    <!-- ========== END MUSIC PLAYER SECTION ========== -->
+
+    <!-- ========== AUDIO ELEMENT FOR MUSIC PLAYBACK ========== -->
+    <audio id="audio"></audio>
+
+    <!-- ========== TOAST NOTIFICATION MESSAGE ========== -->
+    <div class="toast" id="toast" role="status"></div>
+
+    <!-- ========== JAVASCRIPT FILE LINK ========== -->
+    <script src="script.js"></script>
+</body>
+</html>
